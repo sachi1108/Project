@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('espresso.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        header {
+            background-color: #534f4f;
+            color: whitesmoke;
+            padding: 1rem 0;
+            text-align: center;
+            font-family: 'Cursive', sans-serif;
+            font-size: 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(255, 228, 196, 0.9); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-family: 'Cursive', sans-serif;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #534f4f;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #534f4f;
+            border-radius: 5px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #f4a261;
+            box-shadow: 0 0 5px rgba(244, 162, 97, 0.8);
+        }
+
+        button {
+            background-color: #534f4f;
+            color: whitesmoke;
+            border: none;
+            cursor: pointer;
+            font-family: 'Cursive', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f4a261;
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-home a {
+            display: inline-block;
+            text-decoration: none;
+            font-family: 'Cursive', sans-serif;
+            color: whitesmoke;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            background-color: #534f4f;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .back-home a:hover {
+            background-color: #f4a261;
+            color: #333;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #534f4f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Contact Us
+    </header>
+
+    <div class="container">
+        <h2>We'd love to hear from you!</h2>
+        <p>Feel free to reach out to us using the form below.</p>
+        <form action="#" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer style="color: white;">
+        <div class="back-home">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+        &copy; 2025 Augustine's Cafe. All rights reserved.
+    </footer>
+</body>
+</html>
